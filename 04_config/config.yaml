@@ -1,0 +1,42 @@
+project:
+  name: Great_Egret_Habitat_Suitability_SDM
+  species: Ardea_alba
+  study_area: Odisha
+  target_crs: EPSG:4326
+  resolution: 30s
+  random_state: 42
+
+paths:
+  raw_data: ../01_data/01_raw
+  processed_data: ../01_data/02_processed
+  outputs: ../04_outputs
+  models: ../03_models
+
+data:
+  occurrence_file: occurrence.txt
+  boundary_file: Odisha.shp
+
+environmental:
+  bioclim_folder: 02_environmental/01_bioclimatic
+  elevation_folder: 02_environmental/02_elevation
+  ndvi_file: 02_environmental/03_ndvi/ndvi_5year_mean_odisha.tif
+
+surface_water_tiles:
+  - 02_environmental/04_surface_water/extent_80E_20Nv1_4_2021.tif
+  - 02_environmental/04_surface_water/extent_80E_30Nv1_4_2021.tif
+
+model:
+  thinning_distance_km: 5
+  test_size: 0.2
+  n_estimators: 500
+  max_depth: 15
+  min_samples_split: 5
+  min_samples_leaf: 2
+  n_jobs: -1
+
+outputs:
+  save_cleaned_occurrence: true
+  save_thinned_occurrence: true
+  save_model: true
+  save_raster: true
+  save_figures: true
