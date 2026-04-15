@@ -1,7 +1,4 @@
 # Ardea_alba_Odisha_RF_SDM
-Here’s a **clean, minimal, professional README.md** (no extra clutter):
-
----
 
 # Habitat Suitability of *Ardea alba* (Great Egret)
 
