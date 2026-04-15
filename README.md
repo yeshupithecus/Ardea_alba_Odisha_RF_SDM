@@ -1,5 +1,3 @@
-# Ardea_alba_Odisha_RF_SDM
-
 # Habitat Suitability of *Ardea alba* (Great Egret)
 
 This project models the habitat suitability of *Ardea alba* in Odisha, India using a **Random Forest-based Species Distribution Model (SDM)**.
